@@ -1,0 +1,1 @@
+T = [432.158 -54.788;      -54.788 0];ten = eig(T)ten_esc = 338#cismaxif ten > [0 0]   sigma_tresca = max(ten)else  sigma_tresca = max(ten)-min(ten)endif#maxima distorcaosigma_esc_vonmises = sqrt(ten(1)^2 + ten(2)^2 - ten(1)*ten(2))FSt = ten_esc/sigma_trescaFSvm = ten_esc/sigma_esc_vonmises
